@@ -1,5 +1,5 @@
 [versions]
-agp = "8.2.2"
+agp = "9.5.1"
 kotlin = "1.9.22"
 serialization = "1.6.2"
 shizuku = "13.1.5"
