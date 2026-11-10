@@ -1,0 +1,25 @@
+# Gradle / build output
+.gradle/
+build/
+/dist/
+.kotlin/
+
+# IDE
+*.iml
+/.idea/
+/captures
+.DS_Store
+
+# Android
+/local.properties
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+
+# Signing material - never commit
+*.keystore
+*.jks
+
+# The wrapper jar IS committed (needed by ./gradlew)
+!gradle/wrapper/gradle-wrapper.jar

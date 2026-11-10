@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <TextView android:id="@+id/tvApp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"  android:textColor="@color/text" android:textStyle="bold" android:textSize="18sp" />
+        <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/profile_name" android:inputType="text" android:textColor="@color/text" android:textColorHint="@color/text_dim"/>
+        <TextView android:id="@+id/lblTemplate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/template" android:textColor="@color/text" />
+        <Spinner android:id="@+id/spTemplate" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnApplyTemplate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/apply_template"/>
+        <TextView android:id="@+id/tvSensX" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"  android:textColor="@color/text" />
+        <SeekBar android:id="@+id/sbSensX" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="200"/>
+        <TextView android:id="@+id/tvSensY" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"  android:textColor="@color/text" />
+        <SeekBar android:id="@+id/sbSensY" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="200"/>
+        <TextView android:id="@+id/tvAds" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"  android:textColor="@color/text" />
+        <SeekBar android:id="@+id/sbAds" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="200"/>
+        <TextView android:id="@+id/tvSmooth" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"  android:textColor="@color/text" />
+        <SeekBar android:id="@+id/sbSmooth" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100"/>
+        <TextView android:id="@+id/lblMode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/smoothing_mode" android:textColor="@color/text" />
+        <Spinner android:id="@+id/spMode" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Switch android:id="@+id/swInvert" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/invert_y" android:textColor="@color/text"/>
+        <Switch android:id="@+id/swAccel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/accel" android:textColor="@color/text"/>
+        <Button android:id="@+id/btnEditLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_layout"/>
+        <Button android:id="@+id/btnPlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/play"/>
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/save"/>
+        <Button android:id="@+id/btnExport" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/export_clip"/>
+        <Button android:id="@+id/btnExportFile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/export_file"/>
+        <Button android:id="@+id/btnImport" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_clip"/>
+        <Button android:id="@+id/btnImportFile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/import_file"/>
+        <Button android:id="@+id/btnDelete" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delete_profile"/>
+    </LinearLayout>
+</ScrollView>
