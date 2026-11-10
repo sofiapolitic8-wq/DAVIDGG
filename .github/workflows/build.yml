@@ -76,7 +76,7 @@ jobs:
           cp app/build/outputs/apk/release/*.apk dist/RSHMap-release.apk
           ls -l dist
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: RSHMap-apks
           path: dist/*.apk
@@ -89,7 +89,7 @@ jobs:
         continue-on-error: true
         run: ./gradlew :app:lintDebug --stacktrace
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: reports
