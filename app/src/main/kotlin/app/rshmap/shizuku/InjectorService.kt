@@ -82,7 +82,7 @@ class InjectorService : IInjector.Stub() {
         try {
             val forName = Class::class.java.getDeclaredMethod("forName", String::class.java)
             val getDeclaredMethod = Class::class.java.getDeclaredMethod(
-                "getDeclaredMethod", String::class.java, Array<Class<*>>::class.java,
+                "getDeclaredMethod", String::class.java, Class.forName("[Ljava.lang.Class;"),
             )
             val vmRuntimeClass = forName.invoke(null, "dalvik.system.VMRuntime") as Class<*>
             val getRuntime = getDeclaredMethod.invoke(vmRuntimeClass, "getRuntime", null) as Method
